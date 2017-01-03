@@ -1,0 +1,10 @@
+E:\codding\teaching\Gladiators\Gladiators\bin\Debug\Gladiators.exe.config
+E:\codding\teaching\Gladiators\Gladiators\obj\Debug\Gladiators.csprojResolveAssemblyReference.cache
+E:\codding\teaching\Gladiators\Gladiators\bin\Debug\Gladiators.exe
+E:\codding\teaching\Gladiators\Gladiators\bin\Debug\Gladiators.pdb
+E:\codding\teaching\Gladiators\Gladiators\bin\Debug\EntityFramework.dll
+E:\codding\teaching\Gladiators\Gladiators\bin\Debug\EntityFramework.SqlServer.dll
+E:\codding\teaching\Gladiators\Gladiators\bin\Debug\EntityFramework.xml
+E:\codding\teaching\Gladiators\Gladiators\bin\Debug\EntityFramework.SqlServer.xml
+E:\codding\teaching\Gladiators\Gladiators\obj\Debug\Gladiators.exe
+E:\codding\teaching\Gladiators\Gladiators\obj\Debug\Gladiators.pdb
