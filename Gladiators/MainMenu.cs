@@ -48,7 +48,8 @@ namespace Gladiators
                 string answer = BaseMenu.RunBaseMenu(options);
                 if (answer == "1")
                 {
-                    //todo 
+                    var editor = new GladiatorEditor();
+                    editor.RunEditor();
                 }
                 else if (answer == "2")
                 {

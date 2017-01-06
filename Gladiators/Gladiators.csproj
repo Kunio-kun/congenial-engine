@@ -60,9 +60,12 @@
     <Compile Include="EntityModels\BaseEntity.cs" />
     <Compile Include="EntityModels\Gladiator.cs" />
     <Compile Include="EntityModels\Weapon.cs" />
+    <Compile Include="Helpers\ConsoleHelpers.cs" />
     <Compile Include="MainMenu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\GladiatorModel.cs" />
+    <Compile Include="ViewModels\WeaponModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

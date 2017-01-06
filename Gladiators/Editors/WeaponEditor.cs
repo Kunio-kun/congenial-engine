@@ -1,27 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Gladiators.Context;
 using Gladiators.EntityModels;
+using Gladiators.Helpers;
 
 namespace Gladiators.Editors
 {
-    public class WeaponEditor:IInstanceEditor
+    public class WeaponEditor : IInstanceEditor
     {
         public void RunEditor()
         {
             while (true)
             {
-                var answer=BaseMenu.RunBaseMenu(BaseMenu.BaseEditorOptions);
+                var answer = BaseMenu.RunBaseMenu(BaseMenu.BaseEditorOptions);
                 if (answer == "1")
                 {
                     var weapon = new Weapon();
                     Console.WriteLine(" Please, enter weapon's name");
                     weapon.Name = Console.ReadLine();
                     Console.WriteLine(" Please, enter weapon's damage");
-                    weapon.Damage = Convert.ToInt32(Console.ReadLine()); //todo handle wrong input
+
+                    weapon.Damage = ConsoleHelpers.ReadIntInput();
+
                     using (var context = new GameContext())
                     {
                         context.Weapons.Add(weapon);
@@ -43,8 +47,21 @@ namespace Gladiators.Editors
                         var weaponToDelete = context.Weapons.Find(idToDelete);
                         if (weaponToDelete != null)
                         {
-                            context.Weapons.Remove(weaponToDelete);
-                            context.SaveChanges();
+
+                            try
+                            {
+                                context.Weapons.Remove(weaponToDelete);
+                                context.SaveChanges();
+                            }
+                            catch (DbUpdateException ex)
+                            {
+
+                                Console.WriteLine("Could not delete weapon. May be it is in use.");
+#if DEBUG
+                                throw;
+#endif
+                            }
+
                         }
                         else
                         {
@@ -62,11 +79,11 @@ namespace Gladiators.Editors
                     Console.WriteLine("Please enter correct answer");
                 }
 
-                
+
             }
         }
-        
-        
+
+
     }
 
 

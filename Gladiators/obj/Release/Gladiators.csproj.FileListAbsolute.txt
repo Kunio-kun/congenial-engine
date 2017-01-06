@@ -1,0 +1,9 @@
+E:\codding\teaching\Gladiators\Gladiators\bin\Release\Gladiators.exe.config
+E:\codding\teaching\Gladiators\Gladiators\bin\Release\Gladiators.exe
+E:\codding\teaching\Gladiators\Gladiators\bin\Release\Gladiators.pdb
+E:\codding\teaching\Gladiators\Gladiators\bin\Release\EntityFramework.dll
+E:\codding\teaching\Gladiators\Gladiators\bin\Release\EntityFramework.SqlServer.dll
+E:\codding\teaching\Gladiators\Gladiators\bin\Release\EntityFramework.xml
+E:\codding\teaching\Gladiators\Gladiators\bin\Release\EntityFramework.SqlServer.xml
+E:\codding\teaching\Gladiators\Gladiators\obj\Release\Gladiators.exe
+E:\codding\teaching\Gladiators\Gladiators\obj\Release\Gladiators.pdb
