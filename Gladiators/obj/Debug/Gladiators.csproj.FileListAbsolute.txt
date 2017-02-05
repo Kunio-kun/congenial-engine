@@ -8,3 +8,6 @@ E:\codding\teaching\Gladiators\Gladiators\bin\Debug\EntityFramework.xml
 E:\codding\teaching\Gladiators\Gladiators\bin\Debug\EntityFramework.SqlServer.xml
 E:\codding\teaching\Gladiators\Gladiators\obj\Debug\Gladiators.exe
 E:\codding\teaching\Gladiators\Gladiators\obj\Debug\Gladiators.pdb
+E:\codding\teaching\congenial-engine\Gladiators\bin\Debug\Gladiators.exe.config
+E:\codding\teaching\congenial-engine\Gladiators\obj\Debug\Gladiators.exe
+E:\codding\teaching\congenial-engine\Gladiators\obj\Debug\Gladiators.pdb

@@ -10,6 +10,12 @@ namespace Gladiators.Context
 {
     public class GameContext : DbContext
     {
+        public GameContext()
+        {
+            Database.SetInitializer<GameContext>(null);
+            this.Configuration.LazyLoadingEnabled = false;
+        }
+        
         public DbSet<Gladiator> Gladiators { get; set; }
         public DbSet<Weapon> Weapons { get; set; }
     }
